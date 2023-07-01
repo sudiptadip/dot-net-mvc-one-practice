@@ -1,0 +1,27 @@
+﻿@model List<Student>
+
+<h1>
+    Hello I am Category
+</h1>
+<a class="btn btn-dark text-right" asp-controller="Category" asp-action="Create" style="width: 200px" >Add a New Student</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Class</th>
+            <th scope="col">Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var obj in Model)
+        {
+            <tr>
+                <th scope="row">@obj.id</th>
+                <td>@obj.name</td>
+                <td>@obj.clas</td>
+                <td>@obj.age</td>
+            </tr>
+        }
+    </tbody>
+</table>
