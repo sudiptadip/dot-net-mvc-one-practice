@@ -1,5 +1,5 @@
-﻿using connect_to_database.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Models;
 
 namespace connect_to_database.Data
 {

@@ -1,5 +1,5 @@
-﻿using connect_to_database.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Models;
 using System.Diagnostics;
 
 namespace connect_to_database.Controllers

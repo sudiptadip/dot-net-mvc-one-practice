@@ -1,0 +1,27 @@
+﻿@model Student
+
+<h1 class="text-center">Delete Student Category</h1>
+
+<div class="row justify-content-center">
+    <div asp-validation-summary="All"></div>
+    <form class="col-6 mt-5" method="post">
+        <div class="mb-3">
+            <label asp-for='name' for="exampleInputEmail1" class="form-label"></label>
+            <input asp-for='name' disabled type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label asp-for='clas' for="exampleInputPassword1" class="form-label"></label>
+            <input asp-for='clas' disabled type="text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label asp-for='age' for="exampleInputPassword1" class="form-label"></label>
+            <input asp-for='age' disabled type="number" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="row justify-content-center">
+            <input type="submit" value="Delete Student Data" class="btn btn-danger col-6" />
+        </div>
+    </form>
+</div>
+
+
+

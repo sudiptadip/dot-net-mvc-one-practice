@@ -1,5 +1,7 @@
 ﻿@model List<Student>
 
+<partial name="_Nortification" />
+
 <h1>
     Hello I am Category
 </h1>
@@ -11,6 +13,8 @@
             <th scope="col">Name</th>
             <th scope="col">Class</th>
             <th scope="col">Age</th>
+            <th scope="col" >Edit</th>
+            <th scope="col">Delite</th>
         </tr>
     </thead>
     <tbody>
@@ -21,6 +25,8 @@
                 <td>@obj.name</td>
                 <td>@obj.clas</td>
                 <td>@obj.age</td>
+                <td><a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.id" class="btn btn-warning btn-sm" >Edit</a></td>
+                <td><a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.id" class="btn btn-danger btn-sm">Delete</a></td>
             </tr>
         }
     </tbody>
